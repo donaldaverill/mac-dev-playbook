@@ -39,6 +39,7 @@ root    ALL=(ALL) ALL
 
 # Same thing without a password
 # %wheel        ALL=(ALL) NOPASSWD: ALL
+%admin          ALL=(ALL) NOPASSWD: ALL
 
 # Samples
 # %users  ALL=/sbin/mount /cdrom,/sbin/umount /cdrom

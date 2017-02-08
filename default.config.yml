@@ -2,92 +2,145 @@
 downloads: ~/.ansible-downloads/
 
 configure_sudoers: yes
-configure_terminal: yes
+configure_prefs: yes
 configure_osx: yes
 
-dotfiles_repo: https://github.com/geerlingguy/dotfiles.git
-dotfiles_repo_accept_hostkey: yes
-dotfiles_repo_local_destination: ~/Dropbox/Development/GitHub/dotfiles
-dotfiles_files:
-  - .bash_profile
-  - .gitconfig
-  - .gitignore
-  - .inputrc
-  - .osx
-  - .vimrc
+home: "{{ lookup('env','HOME') }}"
+
+homebrew_upgrade_all_packages: no
 
 homebrew_installed_packages:
-  # - ansible # Installed via Pip.
-  - autoconf
-  - bash-completion
-  - chromedriver
-  - doxygen
-  - gettext
+  - ansible
+  - docker
+  - dockutil
   - git
-  - go
-  - gpg
-  - hub
-  - httpie
-  - iperf
-  - libdvdcss
-  - libevent
-  - packer
-  - python
-  - sqlite
-  - mcrypt
-  - mysql
-  - nmap
-  - npm
-  - nvm
-  - php70
-  - php70-mcrypt
-  - php70-xdebug
-  - ssh-copy-id
-  - cowsay
-  - readline
-  - subversion
+  - graphicsmagick
   - openssl
-  - pv
-  - drush
+  - python
+  - tree
   - wget
-  - wrk
 
 homebrew_taps:
   - homebrew/core
   - caskroom/cask
   - homebrew/binary
   - homebrew/dupes
-  - homebrew/php
   - homebrew/versions
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
+  - android-file-transfer
+  - arduino
   - docker
   - dropbox
-  # - fing # Download link keeps getting changed, d'oh!
+  - overdrive-media-console
+  - etcher
   - firefox
+  - gitkraken
   - google-chrome
-  - handbrake
-  - hipchat
-  - java
-  - kdiff3
-  - licecap
-  - limechat
-  - macvim
-  # - menumeters
-  # - yujitach-menumeters # Forked version for 10.11+ support.
-  - nvalt
-  - sequel-pro
-  - skype
-  - skitch
+  - google-chrome-canary
+  - microsoft-office
+  - sdformatter
   - slack
-  - sublime-text
-  - transmit
   - vagrant
   - virtualbox
-  - vlc
+  - visual-studio
+  - visual-studio-code
+
+dock_items_to_remove:
+  - Launchpad
+  - Mail
+  - Safari
+  - Contacts
+  - Notes
+  - Reminders
+  - Maps
+  - Photos
+  - Messages
+  - FaceTime
+  - iTunes
+  - iBooks
+  - App Store
+  - Calendar
+
+dock_items_to_persist:
+  - name: Google Chrome
+    path: "/Applications/Google Chrome.app"
+    pos: 1
+  - name: Visual Studio Code
+    path: "/Applications/Visual Studio Code.app"
+    pos: 2
+  - name: GitKraken
+    path: "/Applications/GitKraken.app"
+    pos: 2
+
+dotfiles_repo: https://github.com/donaldaverill/dotfiles.git
+dotfiles_repo_accept_hostkey: yes
+dotfiles_repo_local_destination: ~/src/dotfiles
+dotfiles_home: "~"
+dotfiles_files:
+  - .aliases
+  - .bash_profile
+  - .bash_prompt
+  - .bashrc
+  - .curlrc
+  - .editorconfig
+  - .functions
+  - .gitattributes
+  - .gitconfig
+  - .gitignore
+  - .gitignore_global
+  - .hushlogin
+  - .inputrc
+  - .osx
+  - .screenrc
+  - .wgetrc
 
 # See `geerlingguy.mas` role documentation for usage instructions.
-mas_installed_app_ids: []
-mas_email: ""
-mas_password: ""
+mas_installed_app_ids:
+  - 411643860 # DaisyDisk
+  - 497799835 # Xcode
+
+visual_studio_code_extensions:
+  - eg2.tslint
+  - timonwong.ansible-autocomplete
+  - PeterJausovec.vscode-docker
+  - EditorConfig.EditorConfig
+  - dbaeumer.vscode-eslint
+  - haaaad.ansible
+  - donjayamanne.python
+  - marcostazi.VS-code-vagrantfile
+  - robertohuertasm.vscode-icons
+  - djabraham.vscode-yaml-validation
+  - sbrink.elm
+  - ms-vscode.Theme-MarkdownKit
+  - DavidAnson.vscode-markdownlint
+  - donjayamanne.githistory
+  - Zignd.html-css-class-completion
+  - xabikos.JavaScriptSnippets
+  - abusaidm.html-snippets
+  - magicstack.MagicPython
+  - msjsdiag.debugger-for-chrome
+  - lukehoban.Go
+  - formulahendry.code-runner
+  - Ionide.Ionide-fsharp
+  - eg2.vscode-npm-script
+  - shinnn.stylelint
+  - joelday.docthis
+  - stevencl.addDocComments
+  - christian-kohler.path-intellisense
+  - christian-kohler.npm-intellisense
+  - alefragnani.Bookmarks
+  - anseki.vscode-color
+  - dzannotti.vscode-babel-coloring
+  - DSKWRK.vscode-generate-getter-setter
+  - streetsidesoftware.code-spell-checker
+  - spywhere.guides
+  - codezombiech.gitignore
+  - naumovs.color-highlight
+  - dkundel.vscode-npm-source
+  - steoates.autoimport
+  - abadi199.elm-format
+  - rbbit.typescript-hero
+  - Rubymaniac.vscode-html-to-elm
+
