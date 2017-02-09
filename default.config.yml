@@ -72,7 +72,10 @@ dock_items_to_persist:
     pos: 2
   - name: GitKraken
     path: "/Applications/GitKraken.app"
-    pos: 2
+    pos: 3
+  - name: Slack
+    path: "/Applications/Slack.app"
+    pos: 4
 
 dotfiles_repo: https://github.com/donaldaverill/dotfiles.git
 dotfiles_repo_accept_hostkey: yes
