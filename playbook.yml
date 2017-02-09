@@ -31,6 +31,9 @@
     - include: tasks/osx.yml
       when: configure_osx
 
+    - include: tasks/repositories.yml
+      when: configure_repositories
+
     - name: Remove all unwanted items from dock
       shell: dockutil --remove "{{ item }}"
       ignore_errors: true

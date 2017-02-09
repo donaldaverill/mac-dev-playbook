@@ -4,6 +4,7 @@ downloads: ~/.ansible-downloads/
 configure_sudoers: yes
 configure_prefs: yes
 configure_osx: yes
+configure_repositories: yes
 
 home: "{{ lookup('env','HOME') }}"
 

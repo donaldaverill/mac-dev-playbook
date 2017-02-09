@@ -1,0 +1,4 @@
+---
+- name: checkout repositories
+  git: repo={{ item.repo }} dest={{ item.dest }}
+  with_items: "{{ repository_configs }}"
