@@ -1,15 +1,15 @@
 #!/bin/sh
 
-# Inspired by: 
+# Inspired by:
 # https://raw.githubusercontent.com/siyelo/laptop/master/install.sh
 
 # This script bootstraps our OSX laptop to a point where we can run
 # Ansible on localhost.
-#  1. Installs 
+#  1. Installs
 #    - xcode
 #    - homebrew
-#    - ansible (via brew) 
-#    - a few ansible galaxy playbooks (zsh, homebrew, cask etc)  
+#    - ansible (via brew)
+#    - a few ansible galaxy playbooks (cask etc)
 #  2. Kicks off the ansible playbook
 #    - main.yml
 #
@@ -30,13 +30,13 @@ set -e
 
 # Here we go.. ask for the administrator password upfront and run a
 # keep-alive to update existing `sudo` time stamp until script has finished
-# sudo -v
-# while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
+sudo -v
+while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 # Ensure Apple's command line tools are installed
 if ! command -v cc >/dev/null; then
   fancy_echo "Installing xcode ..."
-  xcode-select --install 
+  xcode-select --install
 else
   fancy_echo "Xcode already installed. Skipping."
 fi
@@ -51,15 +51,13 @@ fi
 # [Install Ansible](http://docs.ansible.com/intro_installation.html).
 if ! command -v ansible >/dev/null; then
   fancy_echo "Installing Ansible..."
-  brew install ansible 
+  brew install ansible
 else
   fancy_echo "Ansible already installed. Skipping."
 fi
 
-# Run this from the same directory as this README file. 
 fancy_echo "Installing ansible requirements for this playbook..."
 ansible-galaxy install -r requirements.yml
 
 fancy_echo "Running ansible playbook..."
-#ansible-playbook playbook.yml -i hosts --ask-sudo-pass -vvvv 
-ansible-playbook playbook.yml -i hosts
+ansible-playbook main.yml -i hosts --ask-sudo-pass -vvvv
