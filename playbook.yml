@@ -11,14 +11,19 @@
         - ../config.yml
 
   roles:
-    - geerlingguy.dotfiles
-    - geerlingguy.homebrew
+    - role: geerlingguy.dotfiles
+      when: configure_dotfiles
+    - role: geerlingguy.homebrew
+      when: configure_homebrew
     - role: visual-studio-code-extensions
       users:
         - username: "{{ansible_user_id}}"
           visual_studio_code_extensions: "{{ visual_studio_code_extensions }}"
-    - name: geerlingguy.mas
-      when: mas_installed_app_ids
+      when: configure_visual_studio_code_extensions
+    - role: geerlingguy.mas
+      when:
+        - mas_installed_app_ids
+        - configure_mas
 
   tasks:
     - include: tasks/ansible-setup.yml
@@ -34,16 +39,22 @@
     - include: tasks/repositories.yml
       when: configure_repositories
 
+    - include: tasks/npm.yml
+      when: configure_npm
+
     - name: Remove all unwanted items from dock
       shell: dockutil --remove "{{ item }}"
       ignore_errors: true
       with_items: "{{ dock_items_to_remove }}"
+      when: configure_dock_items
 
     - name: Check if items in dock exist
       shell: dockutil --find '{{ item.name }}' || dockutil --add '{{ item.path }}'
       with_items: "{{ dock_items_to_persist }}"
+      when: configure_dock_items
 
     - name: Fix order
       shell: dockutil --move '{{ item.name }}' --position {{ item.pos }}
       with_items: "{{ dock_items_to_persist }}"
+      when: configure_dock_items
 

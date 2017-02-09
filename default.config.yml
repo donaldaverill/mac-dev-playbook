@@ -1,10 +1,16 @@
 ---
 downloads: ~/.ansible-downloads/
 
-configure_sudoers: yes
-configure_prefs: yes
-configure_osx: yes
-configure_repositories: yes
+configure_dock_items: no
+configure_dotfiles: no
+configure_homebrew: no
+configure_sudoers: no
+configure_npm: no
+configure_prefs: no
+configure_osx: no
+configure_repositories: no
+configure_visual_studio_code_extensions: no
+configure_mas: no
 
 home: "{{ lookup('env','HOME') }}"
 
@@ -16,6 +22,7 @@ homebrew_installed_packages:
   - dockutil
   - git
   - graphicsmagick
+  - node
   - openssl
   - python
   - tree
@@ -40,6 +47,7 @@ homebrew_cask_apps:
   - gitkraken
   - google-chrome
   - google-chrome-canary
+  - iterm2
   - microsoft-office
   - sdformatter
   - slack
@@ -104,6 +112,14 @@ dotfiles_files:
 mas_installed_app_ids:
   - 411643860 # DaisyDisk
   - 497799835 # Xcode
+
+npm_absent_globals: []
+
+npm_latest_globals: []
+
+repository_configs:
+  - { repo: 'git://github.com/donaldaverill/meteor-app-example-arduino-serialport.git',
+    dest: '~/src/meteor/app-example-arduino-serialport' }
 
 visual_studio_code_extensions:
   - eg2.tslint

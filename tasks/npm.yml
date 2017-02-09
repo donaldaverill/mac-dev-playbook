@@ -1,0 +1,15 @@
+---
+- name: npm install/update globals
+  npm:
+    name: "{{ item }}"
+    global: yes
+    state: latest
+  with_items: "{{ npm_latest_globals }}"
+
+
+- name: npm remove globals
+  npm:
+    name: "{{ item }}"
+    global: yes
+    state: absent
+  with_items: "{{ npm_absent_globals }}"
