@@ -42,6 +42,9 @@
     - include: tasks/npm.yml
       when: configure_npm
 
+    - include: tasks/meteor.yml
+      when: configure_meteor
+
     - name: Remove all unwanted items from dock
       shell: dockutil --remove "{{ item }}"
       ignore_errors: true

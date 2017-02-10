@@ -11,6 +11,7 @@ configure_osx: no
 configure_repositories: no
 configure_visual_studio_code_extensions: no
 configure_mas: no
+configure_meteor: no
 
 home: "{{ lookup('env','HOME') }}"
 
@@ -112,6 +113,8 @@ dotfiles_files:
 mas_installed_app_ids:
   - 411643860 # DaisyDisk
   - 497799835 # Xcode
+
+meteor_version: "1.4.2.6"
 
 npm_absent_globals: []
 
