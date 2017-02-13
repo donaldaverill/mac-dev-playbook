@@ -23,6 +23,7 @@ homebrew_installed_packages:
   - dockutil
   - git
   - graphicsmagick
+  - mongodb
   - node
   - openssl
   - python
@@ -48,8 +49,10 @@ homebrew_cask_apps:
   - gitkraken
   - google-chrome
   - google-chrome-canary
+  - google-drive
   - iterm2
   - microsoft-office
+  - mongotron
   - sdformatter
   - slack
   - vagrant
