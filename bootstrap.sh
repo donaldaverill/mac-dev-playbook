@@ -60,4 +60,5 @@ fancy_echo "Installing ansible requirements for this playbook..."
 ansible-galaxy install -r requirements.yml
 
 fancy_echo "Running ansible playbook..."
-ansible-playbook main.yml -i hosts --ask-sudo-pass -vvvv
+# ansible-playbook main.yml -i hosts --ask-sudo-pass -vvvv
+ansible-playbook main.yml -i hosts -vvvv
