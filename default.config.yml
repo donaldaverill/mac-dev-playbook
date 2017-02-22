@@ -46,7 +46,6 @@ homebrew_cask_apps:
   - overdrive-media-console
   - etcher
   - firefox
-  - gitkraken
   - google-chrome
   - google-chrome-canary
   - google-drive
@@ -55,6 +54,7 @@ homebrew_cask_apps:
   - mongotron
   - sdformatter
   - slack
+  - sourcetree
   - vagrant
   - virtualbox
   - visual-studio
@@ -83,8 +83,8 @@ dock_items_to_persist:
   - name: Visual Studio Code
     path: "/Applications/Visual Studio Code.app"
     pos: 2
-  - name: GitKraken
-    path: "/Applications/GitKraken.app"
+  - name: Source Tree
+    path: "/Applications/SourceTree.app"
     pos: 3
   - name: Slack
     path: "/Applications/Slack.app"
