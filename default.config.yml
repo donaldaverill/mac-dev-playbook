@@ -53,6 +53,7 @@ homebrew_cask_apps:
   - iterm2
   - microsoft-office
   - mongotron
+  - screenhero
   - sdformatter
   - slack
   - sourcetree
@@ -135,39 +136,39 @@ visual_studio_code_extensions:
   - EditorConfig.EditorConfig
   - dbaeumer.vscode-eslint
   - haaaad.ansible
-  - donjayamanne.python
-  - marcostazi.VS-code-vagrantfile
+  # - donjayamanne.python
+  # - marcostazi.VS-code-vagrantfile
   - robertohuertasm.vscode-icons
-  - djabraham.vscode-yaml-validation
-  - sbrink.elm
-  - ms-vscode.Theme-MarkdownKit
-  - DavidAnson.vscode-markdownlint
+  # - djabraham.vscode-yaml-validation
+  # - sbrink.elm
+  # - ms-vscode.Theme-MarkdownKit
+  # - DavidAnson.vscode-markdownlint
   - donjayamanne.githistory
-  - Zignd.html-css-class-completion
-  - xabikos.JavaScriptSnippets
-  - abusaidm.html-snippets
-  - magicstack.MagicPython
-  - msjsdiag.debugger-for-chrome
-  - lukehoban.Go
-  - formulahendry.code-runner
-  - Ionide.Ionide-fsharp
+  # - Zignd.html-css-class-completion
+  # - xabikos.JavaScriptSnippets
+  # - abusaidm.html-snippets
+  # - magicstack.MagicPython
+  # - msjsdiag.debugger-for-chrome
+  # - lukehoban.Go
+  # - formulahendry.code-runner
+  # - Ionide.Ionide-fsharp
   - eg2.vscode-npm-script
-  - shinnn.stylelint
-  - joelday.docthis
-  - stevencl.addDocComments
+  # - shinnn.stylelint
+  # - joelday.docthis
+  # - stevencl.addDocComments
   - christian-kohler.path-intellisense
   - christian-kohler.npm-intellisense
   - alefragnani.Bookmarks
-  - anseki.vscode-color
-  - dzannotti.vscode-babel-coloring
-  - DSKWRK.vscode-generate-getter-setter
-  - streetsidesoftware.code-spell-checker
-  - spywhere.guides
-  - codezombiech.gitignore
+  # - anseki.vscode-color
+  # - dzannotti.vscode-babel-coloring
+  # - DSKWRK.vscode-generate-getter-setter
+  # - streetsidesoftware.code-spell-checker
+  # - spywhere.guides
+  # - codezombiech.gitignore
   - naumovs.color-highlight
-  - dkundel.vscode-npm-source
-  - steoates.autoimport
-  - abadi199.elm-format
-  - rbbit.typescript-hero
-  - Rubymaniac.vscode-html-to-elm
+  # - dkundel.vscode-npm-source
+  # - steoates.autoimport
+  # - abadi199.elm-format
+  # - rbbit.typescript-hero
+  # - Rubymaniac.vscode-html-to-elm
 
