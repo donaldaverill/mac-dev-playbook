@@ -130,20 +130,26 @@ repository_configs:
     dest: '~/src/meteor/app-example-arduino-serialport' }
 
 visual_studio_code_extensions:
-  - eg2.tslint
-  - timonwong.ansible-autocomplete
-  - PeterJausovec.vscode-docker
-  - EditorConfig.EditorConfig
+  - alefragnani.Bookmarks
+  - christian-kohler.path-intellisense
+  - christian-kohler.npm-intellisense
   - dbaeumer.vscode-eslint
+  - donjayamanne.githistory
+  - EditorConfig.EditorConfig
+  - eg2.tslint
+  - eg2.vscode-npm-script
   - haaaad.ansible
+  - HookyQR.beautify
+  - naumovs.color-highlight
+  - PeterJausovec.vscode-docker
+  - robertohuertasm.vscode-icons
+  - timonwong.ansible-autocomplete
   # - donjayamanne.python
   # - marcostazi.VS-code-vagrantfile
-  - robertohuertasm.vscode-icons
   # - djabraham.vscode-yaml-validation
   # - sbrink.elm
   # - ms-vscode.Theme-MarkdownKit
   # - DavidAnson.vscode-markdownlint
-  - donjayamanne.githistory
   # - Zignd.html-css-class-completion
   # - xabikos.JavaScriptSnippets
   # - abusaidm.html-snippets
@@ -152,20 +158,15 @@ visual_studio_code_extensions:
   # - lukehoban.Go
   # - formulahendry.code-runner
   # - Ionide.Ionide-fsharp
-  - eg2.vscode-npm-script
   # - shinnn.stylelint
   # - joelday.docthis
   # - stevencl.addDocComments
-  - christian-kohler.path-intellisense
-  - christian-kohler.npm-intellisense
-  - alefragnani.Bookmarks
   # - anseki.vscode-color
   # - dzannotti.vscode-babel-coloring
   # - DSKWRK.vscode-generate-getter-setter
   # - streetsidesoftware.code-spell-checker
   # - spywhere.guides
   # - codezombiech.gitignore
-  - naumovs.color-highlight
   # - dkundel.vscode-npm-source
   # - steoates.autoimport
   # - abadi199.elm-format
