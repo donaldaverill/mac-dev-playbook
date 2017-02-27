@@ -30,6 +30,7 @@ homebrew_installed_packages:
   - python
   - tree
   - wget
+  - yarn
 
 homebrew_taps:
   - homebrew/core
