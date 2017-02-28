@@ -144,6 +144,7 @@ visual_studio_code_extensions:
   - naumovs.color-highlight
   - PeterJausovec.vscode-docker
   - robertohuertasm.vscode-icons
+  - steoates.autoimport
   - timonwong.ansible-autocomplete
   # - donjayamanne.python
   # - marcostazi.VS-code-vagrantfile
@@ -169,7 +170,6 @@ visual_studio_code_extensions:
   # - spywhere.guides
   # - codezombiech.gitignore
   # - dkundel.vscode-npm-source
-  # - steoates.autoimport
   # - abadi199.elm-format
   # - rbbit.typescript-hero
   # - Rubymaniac.vscode-html-to-elm
