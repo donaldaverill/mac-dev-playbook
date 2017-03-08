@@ -54,6 +54,7 @@ homebrew_cask_apps:
   - iterm2
   - microsoft-office
   - mongotron
+  - ngrok
   - screenhero
   - sdformatter
   - slack
