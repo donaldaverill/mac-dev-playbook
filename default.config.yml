@@ -133,6 +133,7 @@ repository_configs:
 
 visual_studio_code_extensions:
   - alefragnani.Bookmarks
+  - alexiv.vscode-angular2-files
   - christian-kohler.path-intellisense
   - christian-kohler.npm-intellisense
   - dbaeumer.vscode-eslint
@@ -145,7 +146,6 @@ visual_studio_code_extensions:
   - naumovs.color-highlight
   - PeterJausovec.vscode-docker
   - robertohuertasm.vscode-icons
-  - steoates.autoimport
   - timonwong.ansible-autocomplete
   # - donjayamanne.python
   # - marcostazi.VS-code-vagrantfile
