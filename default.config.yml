@@ -141,38 +141,15 @@ visual_studio_code_extensions:
   - EditorConfig.EditorConfig
   - eg2.tslint
   - eg2.vscode-npm-script
+  - formulahendry.code-runner
   - haaaad.ansible
   - HookyQR.beautify
+  - joelday.docthis
+  - kisstkondoros.typelens
+  - ms-vscode.typescript-javascript-grammar
   - naumovs.color-highlight
   - PeterJausovec.vscode-docker
   - rbbit.typescript-hero
   - robertohuertasm.vscode-icons
   - timonwong.ansible-autocomplete
-  # - donjayamanne.python
-  # - marcostazi.VS-code-vagrantfile
-  # - djabraham.vscode-yaml-validation
-  # - sbrink.elm
-  # - ms-vscode.Theme-MarkdownKit
-  # - DavidAnson.vscode-markdownlint
-  # - Zignd.html-css-class-completion
-  # - xabikos.JavaScriptSnippets
-  # - abusaidm.html-snippets
-  # - magicstack.MagicPython
-  # - msjsdiag.debugger-for-chrome
-  # - lukehoban.Go
-  # - formulahendry.code-runner
-  # - Ionide.Ionide-fsharp
-  # - shinnn.stylelint
-  # - joelday.docthis
-  # - stevencl.addDocComments
-  # - anseki.vscode-color
-  # - dzannotti.vscode-babel-coloring
-  # - DSKWRK.vscode-generate-getter-setter
-  # - streetsidesoftware.code-spell-checker
-  # - spywhere.guides
-  # - codezombiech.gitignore
-  # - dkundel.vscode-npm-source
-  # - abadi199.elm-format
-  # - rbbit.typescript-hero
-  # - Rubymaniac.vscode-html-to-elm
 
