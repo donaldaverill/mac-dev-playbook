@@ -47,6 +47,7 @@ homebrew_cask_apps:
   - dropbox
   - overdrive-media-console
   - etcher
+  - filezilla
   - firefox
   - google-chrome
   - google-chrome-canary
