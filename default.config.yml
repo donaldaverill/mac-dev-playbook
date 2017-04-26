@@ -44,6 +44,7 @@ homebrew_cask_apps:
   - android-file-transfer
   - arduino
   - docker
+  - dotnet
   - dropbox
   - overdrive-media-console
   - etcher
