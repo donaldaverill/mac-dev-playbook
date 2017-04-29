@@ -53,7 +53,6 @@ homebrew_cask_apps:
   - google-chrome
   - google-chrome-canary
   - google-drive
-  - iterm2
   - microsoft-office
   - mongotron
   - ngrok
