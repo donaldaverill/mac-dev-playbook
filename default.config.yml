@@ -56,7 +56,6 @@ homebrew_cask_apps:
   - microsoft-office
   - mongotron
   - ngrok
-  - now
   - screenhero
   - sdformatter
   - slack
