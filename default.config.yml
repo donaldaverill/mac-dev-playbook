@@ -45,6 +45,7 @@ homebrew_cask_apps:
   - arduino
   - docker
   - dotnet
+  - dotnet-sdk
   - dropbox
   - overdrive-media-console
   - etcher
