@@ -56,9 +56,33 @@ else
   fancy_echo "Ansible already installed. Skipping."
 fi
 
-fancy_echo "Installing ansible requirements for this playbook..."
+if ! command -v git >/dev/null; then
+  fancy_echo "Installing Git..."
+  brew install git
+else
+  fancy_echo "Git already installed. Skipping."
+fi
+
+# Clone the repository to your local drive.
+if [ -d ~/tmp_laptop ]; then
+  fancy_echo "tmp_laptop repo dir exists. Removing ..."
+  rm -rf ~/tmp_laptop
+fi
+
+mkdir ~/tmp_laptop
+cd ~/tmp_laptop
+
+fancy_echo "Cloning mac-dev-playbook repo ..."
+git clone https://github.com/donaldaverill/mac-dev-playbook.git
+
+fancy_echo "Changing to mac-dev-playbook repo dir ..."
+cd ~/tmp_laptop/mac-dev-playbook
+
+# fancy_echo "Installing ansible requirements for this playbook..."
 ansible-galaxy install -r requirements.yml
 
-fancy_echo "Running ansible playbook..."
-# ansible-playbook main.yml -i hosts --ask-sudo-pass -vvvv
-ansible-playbook main.yml -i hosts -vvvv
+# fancy_echo "Running ansible playbook..."
+ansible-playbook main.yml -i hosts --ask-sudo-pass -vvvv
+
+fancy_echo "Removing ~/tmp_laptop ..."
+rm -rf ~/tmp_laptop
