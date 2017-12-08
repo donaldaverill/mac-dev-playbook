@@ -17,19 +17,7 @@ home: "{{ lookup('env','HOME') }}"
 
 homebrew_upgrade_all_packages: no
 
-homebrew_installed_packages:
-  - ansible
-  - docker
-  - dockutil
-  - git
-  - gpg
-  - graphicsmagick
-  - mongodb
-  - node
-  - openssl
-  - python
-  - tree
-  - wget
+homebrew_installed_packages: []
 
 homebrew_taps:
   - homebrew/core
@@ -39,68 +27,18 @@ homebrew_taps:
   - homebrew/versions
 
 homebrew_cask_appdir: /Applications
-homebrew_cask_apps:
-  - arduino
-  - firefox
-  - google-chrome
-  - google-chrome-canary
-  - microsoft-office
-  - ngrok
-  - slack
-  - sourcetree
-  - visual-studio-code
 
-dock_items_to_remove:
-  - Launchpad
-  - Mail
-  - Safari
-  - Contacts
-  - Notes
-  - Reminders
-  - Maps
-  - Photos
-  - Messages
-  - FaceTime
-  - iTunes
-  - iBooks
-  - App Store
-  - Calendar
+homebrew_cask_apps: []
 
-dock_items_to_persist:
-  - name: Google Chrome
-    path: "/Applications/Google Chrome.app"
-    pos: 1
-  - name: Visual Studio Code
-    path: "/Applications/Visual Studio Code.app"
-    pos: 2
-  - name: Source Tree
-    path: "/Applications/SourceTree.app"
-    pos: 3
-  - name: Slack
-    path: "/Applications/Slack.app"
-    pos: 4
+dock_items_to_remove: []
+
+dock_items_to_persist: []
 
 dotfiles_repo: https://github.com/donaldaverill/dotfiles.git
 dotfiles_repo_accept_hostkey: yes
 dotfiles_repo_local_destination: ~/src/dotfiles
 dotfiles_home: "~"
-dotfiles_files:
-  - .aliases
-  - .bash_profile
-  - .bash_prompt
-  - .bashrc
-  - .curlrc
-  - .editorconfig
-  - .functions
-  - .gitattributes
-  - .gitconfig
-  - .gitignore
-  - .gitignore_global
-  - .hushlogin
-  - .inputrc
-  - .osx
-  - .screenrc
-  - .wgetrc
+dotfiles_files: []
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_app_ids:
@@ -114,7 +52,4 @@ npm_latest_globals: []
 
 repository_configs: []
 
-visual_studio_code_extensions:
-  - EditorConfig.EditorConfig
-  - haaaad.ansible
-
+visual_studio_code_extensions: []

@@ -15,11 +15,11 @@
       when: configure_dotfiles
     - role: geerlingguy.homebrew
       when: configure_homebrew
-    # - role: visual-studio-code-extensions
-    #   users:
-    #     - username: "{{ansible_user_id}}"
-    #       visual_studio_code_extensions: "{{ visual_studio_code_extensions }}"
-    #   when: configure_visual_studio_code_extensions
+    - role: visual-studio-code-extensions
+      users:
+        - username: "{{ansible_user_id}}"
+          visual_studio_code_extensions: "{{ visual_studio_code_extensions }}"
+      when: configure_visual_studio_code_extensions
     - role: geerlingguy.mas
       when:
         - mas_installed_app_ids

@@ -78,6 +78,14 @@ git clone https://github.com/donaldaverill/mac-dev-playbook.git
 fancy_echo "Changing to mac-dev-playbook repo dir ..."
 cd ~/tmp_laptop/mac-dev-playbook
 
+mkdir ~/tmp_laptop/mac-dev-playbook/roles
+cd ~/tmp_laptop/mac-dev-playbook/roles
+
+fancy_echo "Cloning ansible-role-visual-studio-code-extensions repo ..."
+git clone https://github.com/donaldaverill/ansible-role-visual-studio-code-extensions.git
+
+cd ~/tmp_laptop/mac-dev-playbook
+
 # fancy_echo "Installing ansible requirements for this playbook..."
 ansible-galaxy install -r requirements.yml
 
