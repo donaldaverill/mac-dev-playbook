@@ -85,6 +85,7 @@ fancy_echo "Cloning ansible-role-visual-studio-code-extensions repo ..."
 git clone https://github.com/donaldaverill/ansible-role-visual-studio-code-extensions.git
 
 cd ~/tmp_laptop/mac-dev-playbook
+cp config.default.yml config.yml
 
 # fancy_echo "Installing ansible requirements for this playbook..."
 ansible-galaxy install -r requirements.yml
