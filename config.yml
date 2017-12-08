@@ -1,0 +1,22 @@
+---
+configure_dock_items: no
+configure_dotfiles: yes
+configure_repositories: no
+configure_sudoers: no
+configure_prefs: no
+configure_osx: no
+configure_mas: no
+configure_meteor: no
+
+configure_homebrew: no
+configure_npm: no
+configure_visual_studio_code_extensions: no
+
+npm_absent_globals: []
+
+npm_latest_globals:
+  - '@angular/cli'
+
+repository_configs:
+  - { repo: 'git://github.com/donaldaverill/mac-dev-playbook.git',
+    dest: '~/src/ansible/MacPlaybook' }

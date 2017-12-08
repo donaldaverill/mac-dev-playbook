@@ -30,7 +30,6 @@ homebrew_installed_packages:
   - python
   - tree
   - wget
-  - yarn
 
 homebrew_taps:
   - homebrew/core
@@ -41,29 +40,14 @@ homebrew_taps:
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
-  - android-file-transfer
   - arduino
-  - docker
-  - dotnet
-  - dotnet-sdk
-  - dropbox
-  - overdrive-media-console
-  - etcher
-  - filezilla
   - firefox
   - google-chrome
   - google-chrome-canary
   - microsoft-office
-  - mongotron
   - ngrok
-  - scratch
-  - screenhero
-  - sdformatter
   - slack
   - sourcetree
-  - vagrant
-  - virtualbox
-  - visual-studio
   - visual-studio-code
 
 dock_items_to_remove:
@@ -120,38 +104,17 @@ dotfiles_files:
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_app_ids:
-  - 411643860 # DaisyDisk
   - 497799835 # Xcode
 
-meteor_version: "1.4.2.6"
+meteor_version: "1.6"
 
 npm_absent_globals: []
 
 npm_latest_globals: []
 
-repository_configs:
-  - { repo: 'git://github.com/donaldaverill/meteor-app-example-arduino-serialport.git',
-    dest: '~/src/meteor/app-example-arduino-serialport' }
+repository_configs: []
 
 visual_studio_code_extensions:
-  - alefragnani.Bookmarks
-  - alexiv.vscode-angular2-files
-  - christian-kohler.path-intellisense
-  - christian-kohler.npm-intellisense
-  - dbaeumer.vscode-eslint
-  - donjayamanne.githistory
   - EditorConfig.EditorConfig
-  - eg2.tslint
-  - eg2.vscode-npm-script
-  - formulahendry.code-runner
   - haaaad.ansible
-  - HookyQR.beautify
-  - joelday.docthis
-  - kisstkondoros.typelens
-  - ms-vscode.typescript-javascript-grammar
-  - naumovs.color-highlight
-  - PeterJausovec.vscode-docker
-  - rbbit.typescript-hero
-  - robertohuertasm.vscode-icons
-  - timonwong.ansible-autocomplete
 
