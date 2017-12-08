@@ -41,8 +41,7 @@ dotfiles_home: "~"
 dotfiles_files: []
 
 # See `geerlingguy.mas` role documentation for usage instructions.
-mas_installed_apps:
-  - { id: 497799835, name: "Xcode" }
+mas_installed_apps: []
 
 meteor_version: "1.6"
 
