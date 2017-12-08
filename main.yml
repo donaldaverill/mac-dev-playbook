@@ -9,12 +9,16 @@
     - include_vars: "{{ item }}"
       with_fileglob:
         - ../config.yml
+      tags: ['always']
+    - debug: var=mas_installed_apps
 
   roles:
-    - role: geerlingguy.dotfiles
-      when: configure_dotfiles
     - role: geerlingguy.homebrew
       when: configure_homebrew
+      tags: ['homebrew']
+    - role: geerlingguy.dotfiles
+      when: configure_dotfiles
+      tags: ['dotfiles']
     - role: visual-studio-code-extensions
       users:
         - username: "{{ansible_user_id}}"
@@ -22,8 +26,9 @@
       when: configure_visual_studio_code_extensions
     - role: geerlingguy.mas
       when:
-        - mas_installed_app_ids
+        - mas_installed_apps
         - configure_mas
+      tags: ['mas']
 
   tasks:
     - include: tasks/ansible-setup.yml
