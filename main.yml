@@ -65,4 +65,3 @@
       shell: dockutil --move '{{ item.name }}' --position {{ item.pos }}
       with_items: "{{ dock_items_to_persist }}"
       when: configure_dock_items
-

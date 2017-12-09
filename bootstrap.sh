@@ -63,35 +63,13 @@ else
   fancy_echo "Git already installed. Skipping."
 fi
 
-# Clone the repository to your local drive.
-if [ -d ~/tmp_laptop ]; then
-  fancy_echo "tmp_laptop repo dir exists. Removing ..."
-  rm -rf ~/tmp_laptop
+if [ -d ./roles ]; then
+  fancy_echo "Get fresh roles ..."
+  rm -rf ./roles
 fi
-
-mkdir ~/tmp_laptop
-cd ~/tmp_laptop
-
-fancy_echo "Cloning mac-dev-playbook repo ..."
-git clone https://github.com/donaldaverill/mac-dev-playbook.git
-
-fancy_echo "Changing to mac-dev-playbook repo dir ..."
-cd ~/tmp_laptop/mac-dev-playbook
-
-mkdir ~/tmp_laptop/mac-dev-playbook/roles
-cd ~/tmp_laptop/mac-dev-playbook/roles
-
-fancy_echo "Cloning ansible-role-visual-studio-code-extensions repo ..."
-git clone https://github.com/donaldaverill/ansible-role-visual-studio-code-extensions.git
-
-cd ~/tmp_laptop/mac-dev-playbook
-cp config.default.yml config.yml
 
 # fancy_echo "Installing ansible requirements for this playbook..."
 ansible-galaxy install -r requirements.yml
 
 # fancy_echo "Running ansible playbook..."
 ansible-playbook main.yml -i hosts --ask-sudo-pass -vvvv
-
-fancy_echo "Removing ~/tmp_laptop ..."
-rm -rf ~/tmp_laptop
