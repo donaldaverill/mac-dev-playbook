@@ -11,7 +11,6 @@ configure_osx: no
 configure_repositories: no
 configure_visual_studio_code_extensions: no
 configure_mas: no
-configure_meteor: no
 
 home: "{{ lookup('env','HOME') }}"
 
@@ -44,8 +43,6 @@ dotfiles_files: []
 mas_signin_dialog: no
 mas_upgrade_all_apps: no
 mas_installed_apps: []
-
-meteor_version: "1.6"
 
 npm_absent_globals: []
 
