@@ -6,7 +6,6 @@ configure_sudoers: yes
 configure_prefs: yes
 configure_osx: yes
 configure_mas: yes
-configure_meteor: yes
 configure_homebrew: yes
 configure_npm: yes
 configure_visual_studio_code_extensions: yes
