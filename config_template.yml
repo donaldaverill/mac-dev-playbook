@@ -99,7 +99,7 @@ npm_latest_globals:
 repository_configs:
   - { repo: 'git://github.com/donaldaverill/mac-dev-playbook.git',
       dest: '~/src/ansible/MacPlaybook' }
-  - { repo: 'https://github.com/donaldaverill/dotfiles',
+  - { repo: 'git://github.com/donaldaverill/dotfiles.git',
       dest: '~/src/dotfiles' }
 
 visual_studio_code_extensions:
