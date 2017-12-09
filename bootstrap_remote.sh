@@ -84,6 +84,8 @@ cd ~/tmp_laptop/mac-dev-playbook/roles
 fancy_echo "Cloning ansible-role-visual-studio-code-extensions repo ..."
 git clone https://github.com/donaldaverill/ansible-role-visual-studio-code-extensions.git
 
+mv ~/tmp_laptop/mac-dev-playbook/roles/ansible-role-visual-studio-code-extensions ~/tmp_laptop/mac-dev-playbook/roles/visual-studio-code-extensions
+
 cd ~/tmp_laptop/mac-dev-playbook
 cp config_template.yml config.yml
 
