@@ -48,6 +48,7 @@ dock_items_to_remove:
   - Reminders
   - Safari
   - Siri
+  - System Preferences
 
 dock_items_to_persist:
   - name: Google Chrome
@@ -62,7 +63,7 @@ dock_items_to_persist:
   - name: Slack
     path: "/Applications/Slack.app"
     pos: 4
-  - name: Source Tree
+  - name: SourceTree
     path: "/Applications/SourceTree.app"
     pos: 5
   - name: Terminal
