@@ -24,7 +24,6 @@ homebrew_installed_packages:
 homebrew_cask_apps:
   - firefox
   - google-chrome
-  - google-chrome-canary
   - microsoft-office
   - ngrok
   - slack
