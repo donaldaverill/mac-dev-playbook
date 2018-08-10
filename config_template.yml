@@ -1,16 +1,16 @@
 ---
-configure_dock_items: yes
-configure_dotfiles: yes
-configure_repositories: yes
-configure_sudoers: yes
-configure_prefs: yes
-configure_osx: yes
-configure_mas: yes
-configure_homebrew: yes
-configure_npm: yes
-configure_visual_studio_code_extensions: yes
+configure_dock_items: no
+configure_dotfiles: no
+configure_repositories: no
+configure_sudoers: no
+configure_prefs: no
+configure_osx: no
+configure_mas: no
+configure_homebrew: no
+configure_npm: no
+configure_visual_studio_code_extensions: no
 
-homebrew_upgrade_all_packages: yes
+homebrew_upgrade_all_packages: no
 
 homebrew_installed_packages:
   - ansible
