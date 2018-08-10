@@ -29,7 +29,7 @@ dock_items_to_remove: []
 
 dock_items_to_persist: []
 
-dotfiles_repo: https://github.com/donaldaverill/dotfiles.git
+dotfiles_repo: git://github.com/donaldaverill/dotfiles.git
 dotfiles_repo_accept_hostkey: yes
 dotfiles_repo_local_destination: ~/src/dotfiles
 dotfiles_home: "~"
