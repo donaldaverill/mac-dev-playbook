@@ -92,23 +92,3 @@ repository_configs:
       dest: '~/src/ansible/MacPlaybook' }
   - { repo: 'git://github.com/donaldaverill/dotfiles.git',
       dest: '~/src/dotfiles' }
-
-visual_studio_code_extensions:
-  - alefragnani.bookmarks
-  - Angular.ng-template
-  - CoenraadS.bracket-pair-colorizer
-  - christian-kohler.npm-intellisense
-  - dbaeumer.vscode-eslint
-  - donjayamanne.githistory
-  - eamodio.gitlens
-  - EditorConfig.EditorConfig
-  - eg2.tslint
-  - eg2.vscode-npm-script
-  - haaaad.ansible
-  - IBM.output-colorizer
-  - ms-vscode.typescript-javascript-grammar
-  - msjsdiag.debugger-for-chrome
-  - natewallace.angular2-inline
-  - pflannery.vscode-versionlens
-  - robertohuertasm.vscode-icons
-  - WallabyJs.wallaby-vscode
