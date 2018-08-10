@@ -20,15 +20,6 @@ homebrew_installed_packages:
   - openssl
   - python
 
-homebrew_cask_apps:
-  - firefox
-  - google-chrome
-  - microsoft-office
-  - ngrok
-  - slack
-  - sourcetree
-  - visual-studio-code
-
 dock_items_to_remove:
   - App Store
   - Calendar
