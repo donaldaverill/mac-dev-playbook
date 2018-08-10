@@ -1,16 +1,16 @@
 ---
 configure_dock_items: no
-configure_dotfiles: no
+configure_dotfiles: yes
 configure_repositories: no
-configure_sudoers: no
-configure_prefs: no
-configure_osx: no
-configure_mas: no
-configure_homebrew: no
+configure_sudoers: yes
+configure_prefs: yes
+configure_osx: yes
+configure_mas: 
+configure_homebrew: yes
 configure_npm: no
 configure_visual_studio_code_extensions: no
 
-homebrew_upgrade_all_packages: no
+homebrew_upgrade_all_packages: yes
 
 homebrew_installed_packages:
   - ansible
@@ -42,24 +42,9 @@ dock_items_to_remove:
   - System Preferences
 
 dock_items_to_persist:
-  - name: Google Chrome
-    path: "/Applications/Google Chrome.app"
-    pos: 1
-  - name: Firefox
-    path: "/Applications/Firefox.app"
-    pos: 2
-  - name: Visual Studio Code
-    path: "/Applications/Visual Studio Code.app"
-    pos: 3
-  - name: Slack
-    path: "/Applications/Slack.app"
-    pos: 4
-  - name: SourceTree
-    path: "/Applications/SourceTree.app"
-    pos: 5
   - name: Terminal
     path: "/Applications/Utilities/Terminal.app"
-    pos: 6
+    pos: 1
 
 dotfiles_files:
   - .aliases
