@@ -1,5 +1,5 @@
 ---
-configure_dock_items: no
+configure_dock_items: yes
 configure_dotfiles: yes
 configure_repositories: no
 configure_sudoers: yes
